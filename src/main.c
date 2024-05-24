@@ -9,7 +9,7 @@
 
 
 void _entry(){
-    MessageBoxW(NULL, L"Snake Game By Zvqle\nOnly rule is to not go beyond the screen!", L"Snake Game", MB_OK | MB_ICONINFORMATION);
+    MessageBoxW(NULL, L"Snake Game By Zvqle\nOnly rule is to not go beyond the screen!\nTo Exit Click ESC\n\nHave Fun!!", L"Snake Game", MB_OK | MB_ICONINFORMATION);
 RESTART:
     data* dta = alloc_mem(sizeof(data));
     dta->sHeight = GetSystemMetrics(SM_CYSCREEN);

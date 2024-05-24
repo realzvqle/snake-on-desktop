@@ -50,7 +50,7 @@ void draw_snake(data* data, snake* snake){
     }
 
     controls(snake, data);
-    int speed = 102;
+    int speed = 150;
     if(snake->state == RIGHT){
         snake->rect.right+=speed;
         snake->rect.left+=speed;
