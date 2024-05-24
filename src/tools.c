@@ -110,13 +110,9 @@ unsigned int xorshift32(unsigned int *seed) {
 
 int getRandomNumber(int min, int max) {
     static unsigned int seed = 0;
-
-    // If seed is not initialized, use GetTickCount
     if (seed == 0) {
         seed = GetTickCount();
     }
-
-    // Generate a random number within the range [min, max]
     unsigned int randomValue = xorshift32(&seed);
     return min + (randomValue % (max - min + 1));
 }

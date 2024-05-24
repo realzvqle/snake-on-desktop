@@ -19,7 +19,6 @@ RESTART:
     snake* snke = setup_snake(dta);
     apple* aple = setup_apple();
     while(1){
-
         draw_snake(dta, snke);
         if(GetAsyncKeyState(VK_ESCAPE)) goto CLEANUP;
         int stat = check_collision(dta, aple, snke);
